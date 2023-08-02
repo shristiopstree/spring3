@@ -23,3 +23,9 @@ if [ $? -eq 0 ]; then
 else
   exit 1
 fi
+end=$(date +"%s")
+
+diff=$(($end - $start))
+
+echo "Deployed in : ${diff}s"
+
